@@ -34,3 +34,22 @@ CREATE Table TeamBatting (
 	PRIMARY KEY (TeamsByYear)
 	);
 SELECT * FROM teambatting;
+
+CREATE Table TeamData_Final AS
+SELECT
+	TeamWinPer.TeamsByYear AS TeamsByYear,
+	TeamWinPer.Win_per as Win_Percentage,
+	TeamWinPer.GamesPlayed as Games_Played,
+	TeamBatting.Homeruns as Homeruns,
+	TeamBatting.RBI as RBI,
+	TeamBatting.ISO as ISO,
+	TeamBatting.BABIP as BABIP,
+	TeamBatting.AVG as AVG,
+	TeamBatting.OBP as OBP,
+	TeamBatting.SLG as SLG,
+	TeamBatting.wOBA as wOBA,
+	TeamBatting.wRC as wRC,
+	TeamBatting.WAR as WAR
+FROM TeamWinPer
+JOIN TeamBatting ON TeamWinPer.TeamsByYear=TeamBatting.TeamsByYear;
+SELECT * From TeamData_Final;
