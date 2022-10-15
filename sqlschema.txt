@@ -1,0 +1,36 @@
+CREATE TABLE TeamWinPer(
+	Year int, 
+	Team varchar(10), 
+	TeamsByYear varchar(10),
+	GamesWon int, 
+	GamesPlayed int, 
+	Win_Per float, 
+	PRIMARY KEY (TeamsByYear)
+);
+
+SELECT * FROM TeamWinPer;
+
+CREATE Table TeamBatting (
+	Season varchar, 
+	Team varchar, 
+	TeamsByYear varchar, 
+	Homeruns int, 
+	Runs int,
+	RBI int, 
+	SB int, 
+	BB float, 
+	K float, 
+	ISO float, 
+	BABIP float, 
+	AVG float, 
+	OBP float, 
+	SLG float, 
+	wOBA float, 
+	wRC float, 
+	BsR float, 
+	Off float, 
+	Def float, 
+	WAR float, 
+	PRIMARY KEY (TeamsByYear)
+	);
+SELECT * FROM teambatting;
