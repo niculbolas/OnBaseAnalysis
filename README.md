@@ -60,4 +60,4 @@ The team has established a Slack channel in which to issue any communications.  
 
 Presentation Link: https://docs.google.com/presentation/d/1Qmtk2Fy0qbPqxrCpWapp53WOVkxLiC-9Jv5F53qvKKg/edit?usp=sharing
 
-Database:
+Database: Currently hosted locally within SQL
