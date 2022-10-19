@@ -58,6 +58,8 @@ The team has established a Slack channel in which to issue any communications.  
 
 # Links: 
 
-Presentation Link:
+## Presentation Link:
 
-Database: Currently hosted locally within SQL
+## Dashboard Presentation: https://docs.google.com/presentation/d/1Fbdeag4vSCsL9-5nd2GrHZuVQTGI6RN9MP3OGq_jNjQ/edit?usp=sharing
+
+## Database: Currently hosted locally within SQL
