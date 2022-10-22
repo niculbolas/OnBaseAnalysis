@@ -10,7 +10,10 @@ https://docs.google.com/presentation/d/1Fbdeag4vSCsL9-5nd2GrHZuVQTGI6RN9MP3OGq_j
 Currently hosted locally within SQL
 
 ## Machine Learning:
-Linear Regression & *MAYBE* multi-variable linear regression depending on progress.
+Linear Regression & *MAYBE* multi-variable linear regression depending on progress. Examples of linear regression ML are present in ML branch. 
+
+## Outline:
+Outline is availabe in Presentation link and Dashboard Presentation Link.
 
 # Group Roles:
 Square - David Poole
