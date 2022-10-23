@@ -7,7 +7,7 @@ https://docs.google.com/presentation/d/13--jr1EjUs3x9Z0JhQVQ63RcAD37qgR8t10Dt4ej
 https://docs.google.com/presentation/d/1Fbdeag4vSCsL9-5nd2GrHZuVQTGI6RN9MP3OGq_jNjQ/edit?usp=sharing
 
 ## Database: 
-Currently hosted locally within SQL
+Currently hosted locally within SQL. All SQL related files can be found in their relevant folder. These files include images of uploaded data in PgAdmin, a schema for SQL, an ERD, and a final exported csv after a join occurred. 
 
 ## Machine Learning:
 Linear Regression & *MAYBE* multi-variable linear regression depending on progress. Examples of linear regression ML are present in ML branch. 
