@@ -37,3 +37,7 @@ def predict():
 #Run app
 if __name__ == "__main__":
     app.run(debug=True)
+
+#References: 
+# https://towardsdatascience.com/deploying-machine-learning-models-into-a-website-using-flask-8582b7ce8802
+# https://www.analyticsvidhya.com/blog/2020/09/integrating-machine-learning-into-web-applications-with-flask/
