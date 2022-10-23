@@ -16,7 +16,7 @@ Linear Regression & *MAYBE* multi-variable linear regression depending on progre
 Outline is availabe in Presentation link and Dashboard Presentation Link.
 
 ## Dashboard
-Work has begun on integrating ML into Flask to create a prediction webpage. HTML, CSS, and App.Py files are currently available on Dasboard branch. Tableau work may begin shortly. 
+Work has begun on integrating ML into Flask to create a prediction webpage which covers our interactive portion of the final. HTML, CSS, and App.Py files are currently available on Dasboard branch. Tableau work may begin shortly which will cover the visualization side of the final. 
 
 # Group Roles:
 Square - David Poole
