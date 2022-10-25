@@ -1,5 +1,12 @@
 #wrapper { width: 1000px; margin: 0 auto; }
-body {background-color: rgb(147, 147, 146);}
+body {background-color: rgb(147, 147, 146);
+    background-image: url("../images/background.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;  
+    color: black;
+    font-size: large;
+}
 button {
     font-weight: bold;
     background-color: #cf900a;
@@ -10,6 +17,14 @@ button {
     border-color: black;
     font-family: Arial;
     border-style: ridge;
+}
+.Intro{
+    text-align: left;
+    font-weight: normal;
+    font-size: large;
+}
+.header{
+    font-size: larger;
 }
 input {
     margin: 8px 0;
@@ -29,4 +44,14 @@ input {
     outline: 0;;
     padding: 7px; 
     background-color: #fff;
+}
+table {
+    border-collapse: collapse;
+    border: 2px black solid;
+    font: 12px sans-serif;
+}
+
+td {
+    border: 1px black solid;
+    padding: 5px;
 }

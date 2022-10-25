@@ -7,14 +7,33 @@
         <link rel = "stylesheet" href="../static/styles/styles.css">
         <style>
             div {text-align:center;}
+            body {background-image: "https://media.istockphoto.com/photos/baseball-days-picture-id1314816874?b=1&k=20&m=1314816874&s=170667a&w=0&h=nGrSguY-vQ0hg3RElMk_vvtD7YKro_0qnBd_Shz5bjs=;"}
         </style>
     </head>
     <body>
         <div id = "wrapper">
+            <div class = "jumbotron">
+                <h1 class = "display-4">Results of MLB Team Statistical Analysis</h1>
+                <img src = "https://www.siue.edu/~jackswi/images/mlbteams.jpg" width = "800" height = "250"/>
+            </div>
+            <div class = "page">
+                <div class = "container">
+                    <div class = "intro">
+                        <b>
+                            <p class = "Intro"><b>For this analysis, our team was interested in looking at which team batting statistic was more likely to result in a higher win percentage. 
+                                We took available data from  <a href="https://www.baseball-reference.com/" target="_blank">Baseball Reference</a> and  <a href="https://www.fangraphs.com/" target="_blank">FanGraphs</a> and compiled statistics from the past 15 years. Win Percentage was decided to be our Y variable instead of total wins, as in recent seasons, the number of 
+                                games played was not consistant. The complete list of offensive statistics we looked at can be found in the "Prediction" section below. </b></p>
+                        </b>
+                            <h2>Machine Learning Findings</h2>
+                            <h3>Linear Regression</h3>
+                            <p class = "Intro"><b>Upon completion of the linear regression portion of the Machine Learning Analysis, it was found that (insert findings here) </b></p>
+                            <h3>Multi-Variable Linear Regression</h3>
+                            <p class = "Intro"><b>Upon completion of the multi-variable linear regression portion of the Machine Learning Analysis, it was found that (insert findings here) </b></p>
+
             <!---Initialize structure of Title and house picture--->
             <div class = "title">
-                <h1>MLB Wins Predictor</h1>
-                <img src="https://media.istockphoto.com/photos/baseball-days-picture-id1314816874?b=1&k=20&m=1314816874&s=170667a&w=0&h=nGrSguY-vQ0hg3RElMk_vvtD7YKro_0qnBd_Shz5bjs=" class="house"/>
+                <h2>MLB Wins Predictor</h2>
+                <!-- <img src="https://media.istockphoto.com/photos/baseball-days-picture-id1314816874?b=1&k=20&m=1314816874&s=170667a&w=0&h=nGrSguY-vQ0hg3RElMk_vvtD7YKro_0qnBd_Shz5bjs=" class="house"/> -->
             </div>
             <!---Containerize main page for styling--->
             <div class = "page">
@@ -65,6 +84,7 @@
                     <div class ="pred">
                         <p class = "result"><b>{{ prediction_text }}</b></p>
                     </div>
+                    
                 </div>
             </div>
         </div>
