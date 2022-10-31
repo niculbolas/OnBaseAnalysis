@@ -1,0 +1,131 @@
+<!---Initialize Home Page--->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+        <link rel = "stylesheet" href="../static/styles/styles.css">
+        <style>
+            div {text-align:center;}
+            body {background-image: "https://media.istockphoto.com/photos/baseball-days-picture-id1314816874?b=1&k=20&m=1314816874&s=170667a&w=0&h=nGrSguY-vQ0hg3RElMk_vvtD7YKro_0qnBd_Shz5bjs=;"}
+        </style>
+    </head>
+    <body>
+        <div id = "wrapper">
+            <div class = "jumbotron">
+                <h1 class = "display-4">Results of MLB Team Statistical Analysis</h1>
+                <img src = "https://www.siue.edu/~jackswi/images/mlbteams.jpg" width = "800" height = "250"/>
+            </div>
+            <div class = "page">
+                <div class = "container">
+                    <div class = "intro">
+                        <div>
+                        <b>
+                            <p class = "Intro"><b>For this analysis, our team was interested in looking at which team batting statistic was more likely to result in a higher win percentage. 
+                                We took available data from  <a href="https://www.baseball-reference.com/" target="_blank">Baseball Reference</a> and  <a href="https://www.fangraphs.com/" target="_blank">FanGraphs</a> and compiled relevant statistics from the past 15 years. 
+                                Win Percentage was decided to be our Y variable instead of total wins, as in recent seasons, the number of 
+                                games played per season was not consistant. The complete list of offensive statistics we looked at can be found in the "Prediction" section below. </b></p>
+                        </b>
+                            <h2>Data Exploration and SQL</h2>
+                            <p class = "Intro"><b>Upon deciding on our topic, we sought data sources that would answer our two initial questions:</b></p>
+                            <p class = "Intro"><b>- How do we find data on team wins/losses for the past 15 seasons?</b></p>
+                            <p class = "Intro"><b>- How do we find data on team batting statistics for the past 15 seasons?</b></p>
+                            <p class = "Intro"><b>Both of these were answered by Baseball Reference and FanGraphs. From that point forward, we compiled the .csv files into 
+                                        two .csv's with the intent of using SQL (PgAdmin4) to join them. Once joined, we dropped any columns not pertaining to our initial question and exported the SQL Database to a 
+                                        .csv file and used that in our ML models. <span style = "text-decoration: underline">The images below reflect work done in SQL.</span></b></p>
+                                        <div class = "row">
+                                            <div class = "column">
+                                                <img src="../static/images/teambatting_db.png" style = "width:100%" height = "250">
+                                            </div>
+                                            <div class = "column">
+                                                <img src="../static/images/teamwins_db.png" style = "width:100%" height = "250">
+                                            </div> 
+                                        </div> 
+                            <h2>Machine Learning Findings</h2>
+                            <h3>Single and Multi Variable Linear Regression</h3>
+                            <p class = "Intro"><b>The machine learning model chosen for this data set was Supervised with the specific model being single and multi variable linear regression. 
+                                Upon completion of the linear regression portion of the Machine Learning Analysis, it was found that there is a strong correlation between increased offensive output and win percentage (as expected). 
+                                From these linear regression models, we can also see that some statistics do correlate with better performance. For the advanced statistics, higher wOBA and wRC tend to correlate best with a higher win percentage. While the traditional statistics
+                                of Homeruns and RBI's tend to not have as strong a correlation.  </b></p>
+                                <div class = "row">
+                                    <!-- <div class = "column">
+                                        <img src="../static/images/avg_lr.png" style = "width:100%" height = "250">
+                                    </div> -->
+                                    <div class = "column">
+                                        <img src="../static/images/hr_lr.png" style = "width:100%" height = "250">
+                                    </div>
+                                    <!-- <div class = "column">
+                                         <img src="../static/images/obp_lr.png" style = "width:100%" height = "250">
+                                    </div> -->
+                                    <div class = "column">
+                                        <img src="../static/images/rbi_lr.png" style = "width: 100%" height = "250">
+                                    </div>
+                                <div class = "row">
+                                    <div class = "column">
+                                        <img src="../static/images/wrc_lr.png" style = "width:100%" height = "250">
+                                    </div>
+                                    <div class = "column">
+                                         <img src="../static/images/woba_lr.png" style = "width:100%" height = "250">
+                                    </div>
+                                </div>
+            <!---Initialize structure of Title and house picture--->
+            <div class = "title">
+                <h2>MLB Wins Predictor</h2>
+                <!-- <img src="https://media.istockphoto.com/photos/baseball-days-picture-id1314816874?b=1&k=20&m=1314816874&s=170667a&w=0&h=nGrSguY-vQ0hg3RElMk_vvtD7YKro_0qnBd_Shz5bjs=" class="house"/> -->
+            </div>
+            <!---Containerize main page for styling--->
+            <div class = "page">
+                <!---Containerize paragraph and form for styling--->
+                <div class = "container">
+                    <div class = "intro">
+                        <b>
+                            <p class = "Note"><b>Please enter values consistent with statistical measurement. All statistics other than HR + RBIs will be in 0.### format. 
+                                                At this time, it is required that you enter all fields before pressing "predict".</b></p>
+                        </b>
+                    </div>
+                    <br>
+                    <!---Initialize form structure and inputs, set method to "POST"--->
+                    <form action = "{{url_for('predict')}}" method = "post" class = "info">
+                        <input type="text" id="hr" name="Homeruns" placeholder="HR" required="required"/><span style="color:red"> * </span>
+                        <br>
+                        <br>
+                        <input type="text" id="rbi" name="RBI" placeholder="RBIs" required="required"/><span style="color:red"> * </span>
+                        <br>
+                        <br>
+                        <input type="float" id="iso" name="ISO" placeholder="ISO" required="required"/><span style="color:red"> * </span>
+                        <br>
+                        <br>
+                        <input type="float" id="babip" name="Batting AVG on Balls in Play" placeholder="BABIP"/><span style="color:red" required="required"> * </span>
+                        <br>
+                        <br>
+                        <input type="float" id="avg" name="Batting Average" placeholder="AVG"/><span style="color:red" required="required"> * </span>
+                        <br>
+                        <br>
+                        <input type="float" id="obp" name="On Base Percentage" placeholder="OBP"/><span style="color:red" required="required"> * </span>
+                        <br>
+                        <br>
+                        <input type="float" id="slg" name="Slugging Percentage" placeholder="SLG"/><span style="color:red" required="required"> * </span>
+                        <br>
+                        <br>
+                        <input type="float" id="woba" name="wOBA" placeholder="wOBA"/><span style="color:red" required="required"> * </span>
+                        <br>
+                        <br>
+                        <input type="int" id="wrc" name="Weighted Runs Created" placeholder="wRC"/><span style="color:red" required="required"> * </span>
+                        <br>
+                        <br>
+                        <input type="int" id="war" name="Wins Above Replacement" placeholder="WAR"/><span style="color:red" required="required"> * </span>
+                        <br>
+                        <br>
+                        <button type="submit" class="btn">Predict</button>
+                    </form>
+                    <br> 
+                    <!---Set placeholder for prediction output--->
+                    <div class ="pred">
+                        <p class = "result"><b>{{ prediction_text }}</b></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

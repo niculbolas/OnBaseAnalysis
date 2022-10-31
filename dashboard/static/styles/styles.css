@@ -1,0 +1,73 @@
+#wrapper { width: 1000px; margin: 0 auto; }
+body {background-color: rgb(147, 147, 146);
+    background-image: url("../images/background.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;  
+    color: black;
+    font-size: large;
+}
+button {
+    font-weight: bold;
+    background-color: #cf900a;
+    display: inline-block;
+    text-decoration: none;
+    border-radius:3px;
+    color: black;
+    border-color: black;
+    font-family: Arial;
+    border-style: ridge;
+}
+.Intro{
+    text-align: left;
+    font-weight: normal;
+    font-size: large;
+}
+.header{
+    font-size: larger;
+}
+input {
+    margin: 8px 0;
+    box-sizing: border-box
+}
+.Note {
+    text-align: center;
+    color: black;
+    /* font-weight: bold; */
+    text-decoration: underline;
+    margin: 12px;
+}
+input {
+    width: 150px;
+    border: 5px solid #ddd;
+    border-radius: 3px;
+    outline: 0;;
+    padding: 7px; 
+    background-color: #fff;
+}
+table {
+    border-collapse: collapse;
+    border: 2px black solid;
+    font: 12px sans-serif;
+}
+
+td {
+    border: 1px black solid;
+    padding: 5px;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+img_notes{
+    text-align: left;
+}  
