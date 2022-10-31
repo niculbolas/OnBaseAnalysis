@@ -6,6 +6,9 @@ https://docs.google.com/presentation/d/13--jr1EjUs3x9Z0JhQVQ63RcAD37qgR8t10Dt4ej
 ## Dashboard Presentation:
 https://docs.google.com/presentation/d/1Fbdeag4vSCsL9-5nd2GrHZuVQTGI6RN9MP3OGq_jNjQ/edit?usp=sharing
 
+## Dashboard Demonstration:
+https://drive.google.com/file/d/1X_HcvBglTtG5OsedopCgpoCq4zTon7WE/view?usp=sharing
+
 # Communication Protocols:
 The team has established a Slack channel in which to issue any communications.  If needed, video meets through Zoom, Google Meets, Teams, etc. can also be arranaged using the Slack channel.
 
