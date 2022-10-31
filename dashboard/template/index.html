@@ -45,7 +45,7 @@
                             <h3>Single and Multi Variable Linear Regression</h3>
                             <p class = "Intro"><b>The machine learning model chosen for this data set was Supervised with the specific model being single and multi variable linear regression. 
                                 Upon completion of the linear regression portion of the Machine Learning Analysis, it was found that there is a strong correlation between increased offensive output and win percentage (as expected). 
-                                From these linear regression models, we can also see that some statistics do correlate with better performance. Higher WAR and wRC tend to correlate best with a higher win percentage. While the traditional statistics
+                                From these linear regression models, we can also see that some statistics do correlate with better performance. For the advanced statistics, higher wOBA and wRC tend to correlate best with a higher win percentage. While the traditional statistics
                                 of Homeruns and RBI's tend to not have as strong a correlation.  </b></p>
                                 <div class = "row">
                                     <!-- <div class = "column">
@@ -60,21 +60,13 @@
                                     <div class = "column">
                                         <img src="../static/images/rbi_lr.png" style = "width: 100%" height = "250">
                                     </div>
-                                </div>
-                                <p class = "img_notes">From left to right: Homeruns (HR), Runs Batted In (RBI)</p>
-                                <br>
                                 <div class = "row">
                                     <div class = "column">
-                                        <img src="../static/images/war_lr.png" style = "width:100%" height = "250">
+                                        <img src="../static/images/wrc_lr.png" style = "width:100%" height = "250">
                                     </div>
-                                    <!-- <div class = "column">
-                                         <img src="../static/images/woba_lr.png" style = "width:100%" height = "250">
-                                    </div> -->
                                     <div class = "column">
-                                        <img src="../static/images/wrc_lr.png" style = "width: 100%" height = "250">
+                                         <img src="../static/images/woba_lr.png" style = "width:100%" height = "250">
                                     </div>
-                                </div>
-                                <p class="img_notes">From left to right: Wins Above Replacement (WAR), Weighted Runs Created (wRC).</p>
                                 </div>
             <!---Initialize structure of Title and house picture--->
             <div class = "title">
@@ -87,7 +79,8 @@
                 <div class = "container">
                     <div class = "intro">
                         <b>
-                            <p class = "Note"><b>Please enter values consistent with statistical measurement. All statistics other than HR + RBIs will be in .### format. At this time, it is required that you enter all fields before pressing "predict".</b></p>
+                            <p class = "Note"><b>Please enter values consistent with statistical measurement. All statistics other than HR + RBIs will be in 0.### format. 
+                                                At this time, it is required that you enter all fields before pressing "predict".</b></p>
                         </b>
                     </div>
                     <br>
