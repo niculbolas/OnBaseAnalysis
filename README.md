@@ -62,4 +62,4 @@ PgAdmin and SQL are the database and platform we will be using to integrate our 
 SciKitLearn is the ML library we'll be using to create a classifier. The type of machine learning we will use will be supervised machine learning. We will create both a linear regression model and a multivariate linear regression model to determine which fits our needs better. We will not need to use a Deep Learning Model as our data is pretty straightforward.
 
 ### Dashboard
-In addition to using a Flask template, we will also integrate D3.js for a fully functioning and interactive dashboard. Additionally, we will hopefully integrate the ML process into our webpage so that it can predict the outcomes of inputs. It will be hosted on Heroku.
+In addition to using a Flask template, we will also integrate D3.js for a fully functioning and interactive dashboard. Additionally, we will hopefully integrate the ML process into our webpage so that it can predict the outcomes of inputs. It will be hosted locally with the intent to push to a cloud based platform. 
