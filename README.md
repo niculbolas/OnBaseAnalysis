@@ -61,3 +61,11 @@ SciKitLearn is the ML library we'll be using to create a classifier. The type of
 
 ### Dashboard
 In addition to using a Flask template, we will also integrate D3.js for a fully functioning and interactive dashboard. Additionally, we will hopefully integrate the ML process into our webpage so that it can predict the outcomes of inputs. It will be hosted locally with the intent to push to a cloud based platform. 
+
+## References
+- https://www.baseball-reference.com
+- https://www.fangraphs.com
+- https://www.seanlahman.com/baseball-archive/
+- https://www.analyticsvidhya.com/blog/2020/09/integrating-machine-learning-into-web-applications-with-flask/
+- https://towardsdatascience.com/deploying-machine-learning-models-into-a-website-using-flask-8582b7ce880
+
