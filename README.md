@@ -31,7 +31,7 @@ Currently hosted locally within SQL. All SQL related files can be found in their
 Linear Regression & *MAYBE* multi-variable linear regression depending on progress. Examples of linear regression ML are present in ML branch. 
 
 ## Dashboard
-Work has begun on integrating ML into Flask to create a prediction webpage which covers our interactive portion of the final. HTML, CSS, and App.Py files are currently available on Dasboard branch. Tableau work may begin shortly which will cover the visualization side of the final. 
+Work has begun on integrating ML into Flask to create a prediction webpage which covers our interactive portion of the final. HTML, CSS, and App.Py files are currently available on Dasboard branch. The created Flask Dashboard meets all requirements based on provided rubric. 
 
 ## Group Roles:
 Square - David Poole
