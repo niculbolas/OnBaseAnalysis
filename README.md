@@ -49,8 +49,6 @@ MLAnalysis - Bruce Cowen
 
 Dashboard - Dylan Scott
 
-Database - Rick Jackson
-
 ## Technology Used:
 ### Data Cleaning and Analysis
 Pandas will be used to clean the data and perform an exploratory analysis along with excel and the various functiosn that reside within excel. Further analysis will be completed using Python once we drill down the specific data that we want.
